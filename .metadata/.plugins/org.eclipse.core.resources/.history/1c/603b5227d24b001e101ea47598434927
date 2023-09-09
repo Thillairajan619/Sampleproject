@@ -1,0 +1,27 @@
+package com.app.stepdefinition;
+
+import com.app.locator.HomePage_Locators;
+
+import cucumber.api.java.en.Given;
+import cucumber.api.java.en.Then;
+import cucumber.api.java.en.When;
+
+public class HomePage extends HomePage_Locators {
+	
+	@Given("Launch the URL")
+	public void launch_the_URL() {
+		browserlaunch();
+	}
+
+	@When("Enter user {string}")
+	public void enter_user(String data) {
+		email("username");
+	}
+
+	@When("Enter pass {string}")
+	public void enter_pass(String data) {
+		
+	}
+
+	
+}

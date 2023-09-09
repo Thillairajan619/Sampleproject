@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="MavenProjectWizardLocationPage">
+		<list key="location">
+			<item value="C:\Users\THILLAI\eclipse-workspace\ProjectClass\src\test\java\org\sample"/>
+			<item value="C:\Users\THILLAI\eclipse-workspace\Sample\pom.xml"/>
+		</list>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+	</section>
+	<section name="MavenProjectWizardArchetypePage">
+		<item key="catalog" value="All Catalogs"/>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+	</section>
+	<section name="Maven2ProjectWizardArchifactPage">
+		<list key="package">
+		</list>
+		<list key="groupId">
+		</list>
+		<list key="artifactId">
+		</list>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+		<list key="version">
+			<item value="0.0.1-SNAPSHOT"/>
+		</list>
+	</section>
+	<section name="MavenProjectWizardArtifactPage">
+		<list key="groupId">
+			<item value="org.app"/>
+			<item value="TestQa"/>
+		</list>
+		<list key="name">
+		</list>
+		<list key="artifactId">
+			<item value="TestQAAA"/>
+			<item value="com.testQA"/>
+		</list>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+		<list key="version">
+			<item value="0.0.1-SNAPSHOT"/>
+		</list>
+	</section>
+	<section name="org.eclipse.m2e.core.pom.overview">
+	</section>
+	<section name="org.eclipse.m2e.core.pom.dependencies">
+	</section>
+	<section name="MavenProjectImportWizardPage">
+		<list key="rootDirectory">
+			<item value="C:\Users\THILLAI\Downloads\Aug_API"/>
+			<item value="C:\Users\THILLAI\Downloads\Aug_API (1)"/>
+			<item value="C:\Users\THILLAI\Downloads\July_ jaffer"/>
+			<item value="C:\Users\THILLAI\Downloads\July_Cucumber (2)"/>
+			<item value="C:\Users\THILLAI\Downloads\Oct_Cucumber"/>
+			<item value="C:\Users\THILLAI\Downloads\July_Cucumber\July_Cucumber"/>
+			<item value="C:\Users\THILLAI\Downloads\Test_One_Two (2) (1)\Test_One_Two"/>
+			<item value="C:\Users\THILLAI\Downloads\Test_One_Two (6)"/>
+			<item value="C:\Users\THILLAI\Downloads\Test_One_Two (5)"/>
+			<item value="C:\Users\THILLAI\Downloads\Test_One_Three"/>
+			<item value="C:\Users\THILLAI\Downloads\Test_One_Two"/>
+			<item value="C:\Users\THILLAI\Downloads\Test_One_Two (3)"/>
+		</list>
+		<list key="projectNameTemplate">
+			<item value="AUG_API (2)"/>
+			<item value="augestAPI"/>
+			<item value="July_Jaffer"/>
+			<item value="July_Cucumber_Two"/>
+			<item value="Test_one_TestNG"/>
+			<item value="Test_one_four"/>
+			<item value="Samp_one_Three"/>
+			<item value="Same_one_one"/>
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+	</section>
+</section>

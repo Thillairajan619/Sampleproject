@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<workingSetManager>
+<workingSet editPageId="org.eclipse.jdt.internal.ui.DynamicSourcesWorkingSet" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1689415916154_0" label="Java Main Sources" name="Java Main Sources"/>
+<workingSet editPageId="org.eclipse.jdt.internal.ui.DynamicSourcesWorkingSet" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1689415916167_1" label="Java Test Sources" name="Java Test Sources"/>
+<workingSet editPageId="org.eclipse.ui.resourceWorkingSetPage" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1689424224075_3" label="Test_One_Two" name="Test_One_Two">
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/Same_one_one" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/Samp_one_Three" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/Test_one_four" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/Test_one_TestNG" type="4"/>
+</workingSet>
+<workingSet editPageId="org.eclipse.ui.resourceWorkingSetPage" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1691233091846_4" label="July_Cucumber" name="July_Cucumber">
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/July_Cucumber" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/July_Cucumber_Two" type="4"/>
+</workingSet>
+<workingSet editPageId="org.eclipse.ui.resourceWorkingSetPage" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1692000349102_5" label="July_Jaffer" name="July_Jaffer">
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/July_Jaffer" type="4"/>
+</workingSet>
+<workingSet editPageId="org.eclipse.ui.resourceWorkingSetPage" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1692747947025_6" label="Aug_API" name="Aug_API">
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/Aug_API" type="4"/>
+</workingSet>
+<workingSet aggregate="true" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1689415916830_2" label="Window Working Set" name="Aggregate for window 1689415916830"/>
+</workingSetManager>

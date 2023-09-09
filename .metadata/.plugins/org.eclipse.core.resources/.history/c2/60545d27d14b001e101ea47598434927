@@ -1,0 +1,12 @@
+package com.app.locator;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
+
+public class HomePage_Locators extends BaseClass{
+
+	public static WebElement user() {
+		return driver.findElement(By.id("email"));
+		
+	}
+}

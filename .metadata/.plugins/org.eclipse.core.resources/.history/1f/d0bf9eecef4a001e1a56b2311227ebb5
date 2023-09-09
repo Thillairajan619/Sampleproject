@@ -1,0 +1,92 @@
+package om.app;
+
+import java.time.Duration;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Set;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.edge.EdgeDriver;
+import org.openqa.selenium.support.ui.Select;
+import org.openqa.selenium.JavascriptExecutor;
+import io.github.bonigarcia.wdm.WebDriverManager;
+
+public class Samplefour {
+	
+	public static void main(String[] args) {
+		WebDriver driver = null;
+		//WebDriverManager.chromedriver().setup();
+		//driver= new ChromeDriver();
+		WebDriverManager.edgedriver().setup();
+		driver = new EdgeDriver();
+	//	driver.get("https://www.facebook.com/");
+		//driver.findElement(By.id("email")).sendKeys("shobysmile");
+		//driver.findElement(By.name("pass")).sendKeys("smile23");
+		//driver.findElement(By.name("login")).click();
+
+		//		List<WebElement> findElements = driver.findElements (By.tagName("a"));
+//			System.out.println(findElements);
+//	    for (WebElement webelement: findElements) {
+//	    	String text = webelement.getText();
+//	    	System.out.println(text);
+		//driver.findElement(By.linkText("Forgotten password?")).click();
+		//driver.findElement(By.partialLinkText("Forgotten")).click();
+	//	WebElement email = driver.findElement(By.id("email"));
+//	String attribute = email.getAttribute("placeholder");
+//	System.out.println(attribute);
+	//	WebElement findElement = driver.findElement(By.className("_58mk"));
+		//String text = findElement.getText();
+		//System.out.println(text);
+//		driver.get("https://letcode.in/dropdowns");
+//		WebElement findElement = driver.findElement(By.id("superheros"));
+//		Select select = new Select (findElement);
+//List<WebElement> allSelectedOptions = select.getOptions();
+//for(WebElement ele :allSelectedOptions) {
+//System.out.println(ele.getText());
+//}
+		
+		// Windows Handling
+		
+		/*
+		 * driver.get("https://www.naukri.com/search-jobs");
+		 * driver.manage().window().maximize(); driver.findElement(By.
+		 * xpath("//*[text() = 'Search Engine Optimization Executive ( SEO )']")).click(
+		 * );
+		 * 
+		 * // String windowHandle = driver.getWindowHandle(); //
+		 * System.out.println(windowHandle); Set<String> windowHandles =
+		 * driver.getWindowHandles();
+		 * 
+		 * 
+		 * List<String> li = new ArrayList<>(); li.addAll(windowHandles);
+		 * 
+		 * driver.switchTo().window(li.get(1));
+		 * driver.findElement(By.xpath("//*[text()='Login to apply']")).click();
+		 */
+ 	
+            //JavaScript Executor
+//		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(30));
+//		driver.get("https://www.facebook.com/");
+//		driver.manage().window().maximize();
+//		WebElement findElement = driver.findElement(By.id("email"));
+//		JavaScrpitExector js = (JavaScrpitExector)driver;
+		
+		
+		            // Frames
+		driver.get("https://letcode.in/frame");
+		driver.manage().window().maximize();
+	
+		driver.switchTo().frame(0);
+		driver.findElement(By.xpath("//*[@name=\"fname\"]")).sendKeys("Thillai123@gmail.com");
+		
+		//WebElement findElement2 = driver.findElement(By.xpath("//*[@src=\"innerFrame\"]"));
+		driver.switchTo().frame(1);
+		driver.findElement(By.xpath("//*[@name=\"email\"]")).sendKeys("email");
+	}
+	
+	    
+	}
+

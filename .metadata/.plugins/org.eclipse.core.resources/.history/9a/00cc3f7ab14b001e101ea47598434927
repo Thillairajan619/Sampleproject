@@ -1,0 +1,67 @@
+Feature: LoginPage testing
+
+  Background: 
+    Given Launch the Application
+
+  @smoke1
+  Scenario: Validate the valid username and password
+    When Enter the username "Aiite"
+    And Enter the password "12345"
+    And Click the login button
+    Then Validate the home page
+#
+  #@smoke2
+  #Scenario: Validate the valid username and password
+    #When Enter the username "yuvaraj"
+    #And Enter the password "aiite"
+    #And Click the login button
+    #Then Validate the home page
+#
+  #@asList
+  #Scenario: Correct username and correct password
+    #When Enter the username using asList
+      #| test1 |
+      #| test2 |
+      #| test3 |
+#
+  #And click the login button
+  #Then Validate the Home
+  #@asLists
+  #Scenario : Correct username and correct password
+    #When Enter the username using aslists
+      #| test1 | A |
+      #| test2 | B |
+      #| test3 | C |
+#
+  #And click the login button
+  #Then Validate the Home
+  #@asMap
+  #Scenario: Correct username and correct password
+    #When Enter the username using aslist
+      #| test1 | user1 |
+      #| test2 | user2 |
+      #| test3 | user3 |
+#
+  #And click the login button
+  #Then Validate the Home
+  #@asMaps
+  #Scenario: Correct username and correct password
+    #When Enter the username using aslist
+      #| data1 | data2 |
+      #| test2 | user2 |
+      #| test3 | user3 |
+
+      
+ @tag4
+  Scenario: Title of your scenario outline
+  Given Launch the URL
+  
+  When Enter the username asMap
+  | firstname | Thillai                   |
+  | lastname  | rajan                     |
+  |address    | agaram then               |
+  |city       | Tambaram                  |
+  | state     | TamilNadu                 |
+  | Zipcode   | 600078                    |
+  | ssn       | 7899                      |
+ Then find my login info

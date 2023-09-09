@@ -1,0 +1,110 @@
+package com.app.base;
+
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.IOException;
+import java.util.Properties;
+
+import org.junit.AfterClass;
+import org.junit.BeforeClass;
+import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.support.ui.Select;
+
+public class BaseClass {
+	
+public static WebDriver driver = null;
+	
+ 
+	public static void browserlaunch() {
+		driver= new ChromeDriver();
+		driver.manage().window().maximize();
+		driver.get("https://parabank.parasoft.com/parabank/index.htm");
+	}
+	
+	
+	
+	/*public static String excelReadDataReuseable(int a , int b) {
+		String value =null;
+		try {
+			// location
+			File f = new File("C:\\Users\\Yuvaraj\\eclipse-workspace\\Test_One_Two\\src\\test\\resources"
+					+ "\\TestData\\July_Offline.xlsx");	
+			// read -> FileInput
+			FileInputStream fis = new FileInputStream(f);
+			// work book 
+			Workbook wb = new XSSFWorkbook(fis);
+			// sheet
+			Sheet sheet = wb.getSheet("Sheet1");
+			//row
+			Row row = sheet.getRow(a);
+			Cell cell = row.getCell(b);
+			//System.out.println(cell);
+			int cellType = cell.getCellType();
+			if(cellType==1) {
+				value = cell.getStringCellValue();
+				System.out.println(value);
+			}else if(cellType==0) {
+				if(DateUtil.isCellDateFormatted(cell)) {
+					Date dateCellValue = cell.getDateCellValue();
+			SimpleDateFormat s = new SimpleDateFormat("dd/MM/yyyy");
+			value = s.format(dateCellValue);
+			System.out.println(value);
+			
+				}else {
+					double number = cell.getNumericCellValue();
+					long l = (long)number;
+					value = String.valueOf(l);
+					System.out.println(value);
+				}
+			}
+		} catch (FileNotFoundException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		return value;
+		}*/
+	
+	/*public static void selectValue(WebElement element, String value) {
+		Select s = new Select(element);
+		s.selectByValue(value);
+	}*/
+
+	public static void typedata(WebElement element, String data) {
+		element.sendKeys(data);
+	}
+	public static String getproperty(String url) throws IOException {
+		String value =null;
+		FileInputStream fr = new FileInputStream("G:\\AIITE Academy\\Project Class\\Cucumber\\8-8-23\\July_Cucumber\\target\\config.properties");
+		Properties p =new Properties();
+		p.load(fr);
+		value = p.getProperty(url);
+return value;
+		
+	}
+	
+	public static void clickdata(WebElement element) {
+		element.click();
+	}
+/*
+	@AfterClass
+	public static void closewindow() {
+		driver.close();
+	}
+	
+	public static void clearInputValueByJavaScript(WebElement element, String data) {
+		try {
+			JavascriptExecutor jse = (JavascriptExecutor)driver;
+			jse.executeScript("arguments[0].value='';",element);
+		} catch (Exception e) {
+			throw new RuntimeException("Unable to enter the value using javascript");
+		}
+	}*/
+
+
+}

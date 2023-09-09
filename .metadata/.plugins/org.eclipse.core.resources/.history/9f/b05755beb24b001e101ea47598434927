@@ -1,0 +1,69 @@
+package com.app.stepdefinition;
+
+import java.util.List;
+import java.util.Map;
+
+
+import io.cucumber.datatable.DataTable;
+import io.cucumber.java.en.Given;
+import io.cucumber.java.en.Then;
+import io.cucumber.java.en.When;
+
+public class LoginPage {
+
+	@Given("Launch the Application")
+	public void launch_the_Application() {
+		System.out.println("Browser");
+	}
+
+	/*@When("Enter the username {string}")
+	public void enter_the_username(String username) {
+	System.out.println(username);
+	}
+
+	@When("Enter the password {string}")
+	public void enter_the_password(String password) {
+	System.out.println(password);
+	}
+
+	@When("Click the login button")
+	public void click_the_login_button() {
+	System.out.println("login button");
+	}
+
+	@Then("Validate the home page")
+	public void validate_the_home_page() {
+	System.out.println("home page");
+	} */
+	//asList
+	@When("Enter the username using asList")
+	public void enter_the_username_using_asList(DataTable data) {
+		List<String> asList = data.asList();
+		System.out.println(asList.get(0));
+		System.out.println(asList.get(1));
+	} 
+	
+	/*//asLists
+	@When("Enter the username using aslist")
+	public void enter_the_username_using_aslist(DataTable data) {
+	   List<List<String>> list = data.asLists();
+	   System.out.println(list.get(0).get(0));
+	}*/
+	
+	/*//asMap
+	@When("Enter the username using aslist")
+	public void enter_the_username_using_aslist(DataTable data) {
+		Map<String, String> map = data.asMap(String.class, String.class);
+		System.out.println(map.get("test1"));
+		
+	}*/
+	
+	//asMaps
+//		@When("Enter the username using aslist")
+//		public void enter_the_username_using_aslist(DataTable data) {
+//			List<Map<String,String>> asMaps = data.asMaps();
+//			System.out.println(asMaps.get(0).get("data2"));
+			
+		//}
+	
+}
